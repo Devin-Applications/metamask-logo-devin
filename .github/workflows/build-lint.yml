@@ -28,6 +28,8 @@ jobs:
       - run: yarn lint
       - name: Ensure demo build script works
         run: yarn demo --all
+      - name: Print CHANGELOG.md contents
+        run: cat CHANGELOG.md
       - name: Validate RC changelog
         if: ${{ startsWith(github.head_ref, 'release/') }}
         run: yarn auto-changelog validate --rc --repo https://github.com/Devin-Applications/metamask-logo-devin.git
