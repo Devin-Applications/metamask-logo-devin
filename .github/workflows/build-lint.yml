@@ -27,6 +27,7 @@ jobs:
           yarn install --immutable || {
             if grep -q '@lavamoat/preinstall-always-fail' /tmp/xfs-*/build.log; then
               echo "Ignoring expected failure of @lavamoat/preinstall-always-fail"
+              exit 0
             else
               exit 1
             fi
