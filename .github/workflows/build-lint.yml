@@ -15,13 +15,17 @@ jobs:
       matrix:
         node-version: [18.x, 20.x]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn --frozen-lockfile
-      - run: yarn allow-scripts
+      - name: Enable Corepack
+        run: corepack enable
+      - name: Set Yarn version to 4.3.0
+        run: yarn set version 4.3.0
+      - run: yarn install --immutable
+      # - run: yarn allow-scripts
       - run: yarn lint
       - name: Ensure demo build script works
         run: yarn demo --all
