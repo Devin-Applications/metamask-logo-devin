@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn --frozen-lockfile
+      - run: yarn --immutable
       - run: yarn allow-scripts
       - run: yarn lint
       - name: Ensure demo build script works

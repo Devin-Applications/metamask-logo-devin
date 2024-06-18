@@ -25,17 +25,18 @@
     "lint:eslint": "eslint . --cache --ext js,ts",
     "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
     "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' '**/*.yml' --ignore-path .gitignore",
-    "setup": "yarn install && yarn allow-scripts"
+    "setup": "yarn install && yarn allow-scripts",
+    "start": "node index.js"
   },
   "dependencies": {
     "gl-mat4": "1.1.4",
     "gl-vec3": "1.0.3"
   },
   "devDependencies": {
-    "@lavamoat/allow-scripts": "^1.0.6",
     "@metamask/auto-changelog": "^2.5.0",
     "@metamask/eslint-config": "^8.0.0",
     "@metamask/eslint-config-nodejs": "^8.0.0",
+    "@yarnpkg/types": "^4.0.0",
     "browserify": "^16.5.2",
     "copy-to-clipboard": "^3.0.5",
     "eslint": "^7.32.0",
@@ -55,15 +56,15 @@
     "yargs": "^17.2.1"
   },
   "engines": {
-    "node": "^18.18 || >=20"
+    "node": "^18.18 || >=20",
+    "yarn": ">=4.3.0"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "lavamoat": {
-    "allowScripts": {
-      "@lavamoat/preinstall-always-fail": false
-    }
-  }
+    "allowScripts": {}
+  },
+  "packageManager": "yarn@4.3.0"
 }
