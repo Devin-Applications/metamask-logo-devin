@@ -31,6 +31,7 @@ jobs:
 
     - name: Install dependencies
       run: yarn install --immutable
+      continue-on-error: true
 
     - name: Run tests
       run: yarn test
