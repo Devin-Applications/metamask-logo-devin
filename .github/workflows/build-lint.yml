@@ -20,7 +20,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn --frozen-lockfile
+      - name: Enable Corepack
+        run: corepack enable
+      - name: Set Yarn version to 4.3.0
+        run: yarn set version berry
+      - run: yarn install --immutable
       - run: yarn allow-scripts
       - run: yarn lint
       - name: Ensure demo build script works
