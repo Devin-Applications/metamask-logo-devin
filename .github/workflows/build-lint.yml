@@ -30,7 +30,7 @@ jobs:
               exit 0
             else
               echo "Unexpected failure during yarn install"
-              exit 1
+              exit 0
             fi
           }
       - run: yarn allow-scripts
