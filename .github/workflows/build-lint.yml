@@ -33,7 +33,8 @@ jobs:
               exit 1
             fi
           }
-      - run: yarn allow-scripts
+      - name: Allow scripts
+        run: yarn allow-scripts
       - run: yarn lint
       - name: Ensure demo build script works
         run: yarn demo --all
