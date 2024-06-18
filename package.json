@@ -54,6 +54,7 @@
     "uglifyify": "^5.0.2",
     "yargs": "^17.2.1"
   },
+  "packageManager": "yarn@3.0.0",
   "engines": {
     "node": "^18.18 || >=20",
     "yarn": ">=3.0.0"
@@ -66,6 +67,5 @@
     "allowScripts": {
       "@lavamoat/preinstall-always-fail": false
     }
-  },
-  "packageManager": "yarn@3.0.0"
+  }
 }
