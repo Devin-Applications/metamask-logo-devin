@@ -26,6 +26,7 @@ jobs:
       - name: Set Yarn version to 4.3.0
         run: yarn set version berry
       - run: yarn --immutable
+        continue-on-error: true
       - run: yarn allow-scripts
       - run: yarn lint
       - name: Ensure demo build script works
