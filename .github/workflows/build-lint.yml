@@ -29,6 +29,7 @@ jobs:
               echo "Ignoring expected failure of @lavamoat/preinstall-always-fail"
               exit 0
             else
+              echo "Unexpected failure during yarn install"
               exit 1
             fi
           }
