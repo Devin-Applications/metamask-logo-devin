@@ -23,12 +23,14 @@ jobs:
       - name: Get Yarn version
         run: echo "::set-output name=YARN_VERSION::$(yarn --version)"
         id: yarn-version
+      - name: Set Yarn version to 4.3.0
+        run: yarn set version 4.3.0
       - name: Cache yarn dependencies
         uses: actions/cache@v2
         with:
           path: ${{ steps.yarn-cache-dir.outputs.YARN_CACHE_DIR }}
           key: yarn-cache-${{ runner.os }}-${{ steps.yarn-version.outputs.YARN_VERSION }}-${{ hashFiles('yarn.lock') }}
-      - run: yarn --frozen-lockfile
+      - run: yarn install --immutable
       - run: yarn allow-scripts
       - uses: MetaMask/action-publish-gh-pages@v1
         with:
