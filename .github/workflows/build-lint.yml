@@ -22,7 +22,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Set Yarn version to 4.3.0
         run: yarn set version 4.3.0
-      - run: yarn install --immutable || true
+      - run: yarn install --immutable
       - run: yarn allow-scripts
       - run: yarn lint
       - name: Ensure demo build script works
