@@ -30,16 +30,18 @@ jobs:
       - run: yarn allow-scripts
         continue-on-error: true
       - run: yarn lint
+        if: ${{ success() || failure() }}
         continue-on-error: true
       - name: Ensure demo build script works
         run: yarn demo --all
+        if: ${{ success() || failure() }}
         continue-on-error: true
       - name: Validate RC changelog
-        if: ${{ startsWith(github.head_ref, 'release/') }}
+        if: ${{ startsWith(github.head_ref, 'release/') && (success() || failure()) }}
         run: yarn auto-changelog validate --rc
         continue-on-error: true
       - name: Validate changelog
-        if: ${{ !startsWith(github.head_ref, 'release/') }}
+        if: ${{ !startsWith(github.head_ref, 'release/') && (success() || failure()) }}
         run: yarn auto-changelog validate
         continue-on-error: true
   all-jobs-pass:
