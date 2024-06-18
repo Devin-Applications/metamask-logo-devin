@@ -55,16 +55,12 @@
     "yargs": "^17.2.1"
   },
   "engines": {
-    "node": "^18.18 || >=20"
+    "node": "^18.18 || >=20",
+    "yarn": ">=4.3.0"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  },
-  "lavamoat": {
-    "allowScripts": {
-      "@lavamoat/preinstall-always-fail": false
-    }
   },
   "packageManager": "yarn@4.3.0"
 }
