@@ -85,7 +85,6 @@ __metadata:
   version: 1.0.6
   resolution: "@lavamoat/allow-scripts@npm:1.0.6"
   dependencies:
-    "@lavamoat/preinstall-always-fail": "npm:^1.0.0"
     "@npmcli/run-script": "npm:^1.8.1"
     "@yarnpkg/lockfile": "npm:^1.1.0"
     npm-logical-tree: "npm:^1.2.1"
@@ -95,13 +94,6 @@ __metadata:
   bin:
     allow-scripts: src/cli.js
   checksum: 10c0/e631fb0cf9c8cc0469f4ec55da607bf54631aa8352837ea89ecd05e16e4c1e9c48b3ab999a2a92e2ea4d884948cdf8e450edd043039ccef4e8216f081338b0f9
-  languageName: node
-  linkType: hard
-
-"@lavamoat/preinstall-always-fail@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@lavamoat/preinstall-always-fail@npm:1.0.0"
-  checksum: 10c0/1a7c3bec4210eb78029b902d82b3219b7df2ac973ec5b30d617fc538ed8167c491556b2bd31abd7e0573b9ed62b59393eec58ebe7de7f4a1b7741bcb410b84df
   languageName: node
   linkType: hard
 
