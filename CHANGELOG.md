@@ -42,10 +42,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed unnecessary files from published package
   - Node and browser consumers should be unaffected
 
-[Unreleased]: https://github.com/MetaMask/logo/compare/v3.1.2...HEAD
-[3.1.2]: https://github.com/MetaMask/logo/compare/v3.1.1...v3.1.2
-[3.1.1]: https://github.com/MetaMask/logo/compare/v3.1.0...v3.1.1
-[3.1.0]: https://github.com/MetaMask/logo/compare/v3.0.1...v3.1.0
-[3.0.1]: https://github.com/MetaMask/logo/compare/v3.0.0...v3.0.1
-[3.0.0]: https://github.com/MetaMask/logo/compare/v2.5.0...v3.0.0
-[2.5.0]: https://github.com/MetaMask/logo/releases/tag/v2.5.0
+[Unreleased]: https://github.com/Devin-Applications/metamask-logo-devin.git/compare/v3.1.2...HEAD
+[3.1.2]: https://github.com/Devin-Applications/metamask-logo-devin.git/compare/v3.1.1...v3.1.2
+[3.1.1]: https://github.com/Devin-Applications/metamask-logo-devin.git/compare/v3.1.0...v3.1.1
+[3.1.0]: https://github.com/Devin-Applications/metamask-logo-devin.git/compare/v3.0.1...v3.1.0
+[3.0.1]: https://github.com/Devin-Applications/metamask-logo-devin.git/compare/v3.0.0...v3.0.1
+[3.0.0]: https://github.com/Devin-Applications/metamask-logo-devin.git/compare/v2.5.0...v3.0.0
+[2.5.0]: https://github.com/Devin-Applications/metamask-logo-devin.git/releases/tag/v2.5.0
