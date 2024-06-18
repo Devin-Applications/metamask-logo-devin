@@ -52,8 +52,7 @@
     "rimraf": "^3.0.2",
     "svg-parser": "^2.0.4",
     "uglifyify": "^5.0.2",
-    "yargs": "^17.2.1",
-    "yarn": "^4.3.0"
+    "yargs": "^17.2.1"
   },
   "engines": {
     "node": "^18.18 || >=20",
@@ -64,9 +63,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "lavamoat": {
-    "allowScripts": {
-      "@lavamoat/preinstall-always-fail": false
-    }
+    "allowScripts": {}
   },
   "packageManager": "yarn@4.3.0"
 }
