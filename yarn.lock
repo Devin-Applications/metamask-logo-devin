@@ -5,6 +5,10 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+__metadata:
+  version: 8
+  cacheKey: 10c0
+
 "@babel/code-frame@npm:7.12.11":
   version: 7.12.11
   resolution: "@babel/code-frame@npm:7.12.11"
