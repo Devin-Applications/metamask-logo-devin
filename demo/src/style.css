@@ -1,16 +1,17 @@
-html, body{
+html,
+body {
   height: 100%;
 }
 
-body{
+body {
   background: #202123;
   text-align: center;
   color: white;
   font-family: roboto;
 }
 
-div{
-  height:140px;
+div {
+  height: 140px;
   overflow: visible;
 }
 
