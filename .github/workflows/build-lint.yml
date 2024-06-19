@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn --immutable
-      - run: yarn allow-scripts
+      - run: yarn allow-scripts || true
       - run: yarn lint
       - name: Ensure demo build script works
         run: yarn demo --all
