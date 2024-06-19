@@ -1,0 +1,16 @@
+2024-06-18T21:54:32.5891830Z ##[group]Run yarn allow-scripts
+2024-06-18T21:54:32.5892271Z [36;1myarn allow-scripts[0m
+2024-06-18T21:54:32.5908723Z shell: /usr/bin/bash -e {0}
+2024-06-18T21:54:32.5909204Z env:
+2024-06-18T21:54:32.5909458Z   INFURA_PROJECT_ID: 
+2024-06-18T21:54:32.5909773Z ##[endgroup]
+2024-06-18T21:54:33.1275346Z SyntaxError: Unknown token: { line: 3, col: 2, type: 'INVALID', value: undefined } 3:2 in lockfile
+2024-06-18T21:54:33.1278070Z     at Parser.unexpected (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@yarnpkg/lockfile/index.js:5064:11)
+2024-06-18T21:54:33.1280717Z     at Parser.parse (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@yarnpkg/lockfile/index.js:5193:14)
+2024-06-18T21:54:33.1283222Z     at parse (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@yarnpkg/lockfile/index.js:5262:17)
+2024-06-18T21:54:33.1356040Z     at module.exports.exports.default (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@yarnpkg/lockfile/index.js:4835:96)
+2024-06-18T21:54:33.1457835Z     at loadTree (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@lavamoat/allow-scripts/src/index.js:270:59)
+2024-06-18T21:54:33.1459491Z     at async loadAllPackageConfigurations (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@lavamoat/allow-scripts/src/index.js:365:33)
+2024-06-18T21:54:33.1461074Z     at async runAllowedPackages (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@lavamoat/allow-scripts/src/index.js:29:7)
+2024-06-18T21:54:33.1462541Z     at async start (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@lavamoat/allow-scripts/src/cli.js:19:7)
+2024-06-18T21:54:33.1475708Z ##[error]Process completed with exit code 1.

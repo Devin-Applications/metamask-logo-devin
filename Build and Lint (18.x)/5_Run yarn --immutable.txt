@@ -1,0 +1,22 @@
+2024-06-18T21:54:25.3002840Z ##[group]Run yarn --immutable
+2024-06-18T21:54:25.3003273Z [36;1myarn --immutable[0m
+2024-06-18T21:54:25.3021240Z shell: /usr/bin/bash -e {0}
+2024-06-18T21:54:25.3021580Z env:
+2024-06-18T21:54:25.3021848Z   INFURA_PROJECT_ID: 
+2024-06-18T21:54:25.3022195Z ##[endgroup]
+2024-06-18T21:54:25.7102689Z [94m➤[39m YN0000: · Yarn 4.3.0
+2024-06-18T21:54:25.7242287Z [94m➤[39m [90mYN0000[39m: ┌ Resolution step
+2024-06-18T21:54:25.7244016Z ##[group]Resolution step
+2024-06-18T21:54:25.8031951Z ##[endgroup]
+2024-06-18T21:54:25.8033273Z [94m➤[39m [90mYN0000[39m: └ Completed
+2024-06-18T21:54:25.8250808Z [94m➤[39m [90mYN0000[39m: ┌ Fetch step
+2024-06-18T21:54:25.8252268Z ##[group]Fetch step
+2024-06-18T21:54:28.0517067Z [94m➤[39m YN0013: │ [38;5;220m539[39m packages were added to the project ([38;5;160m+ 54.57 MiB[39m).
+2024-06-18T21:54:28.0518267Z ##[endgroup]
+2024-06-18T21:54:28.0518957Z [94m➤[39m [90mYN0000[39m: └ Completed in 2s 227ms
+2024-06-18T21:54:28.0705295Z [94m➤[39m [90mYN0000[39m: ┌ Link step
+2024-06-18T21:54:28.0706955Z ##[group]Link step
+2024-06-18T21:54:29.5657731Z [93m➤[39m YN0004: │ [38;5;166m@lavamoat/[39m[38;5;173mpreinstall-always-fail[39m[38;5;111m@[39m[38;5;111mnpm:1.0.3[39m lists build scripts, but all build scripts have been disabled.
+2024-06-18T21:54:29.5669682Z ##[endgroup]
+2024-06-18T21:54:29.5670854Z [94m➤[39m [90mYN0000[39m: └ Completed in 1s 495ms
+2024-06-18T21:54:29.5972110Z [93m➤[39m YN0000: · Done with warnings in 3s 888ms

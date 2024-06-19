@@ -1,0 +1,176 @@
+2024-06-18T21:54:17.8842439Z Requested labels: ubuntu-20.04
+2024-06-18T21:54:17.8843353Z Job defined at: Devin-Applications/metamask-logo-devin/.github/workflows/build-lint.yml@refs/heads/Devin/yarn-xHR
+2024-06-18T21:54:17.8843673Z Waiting for a runner to pick up this job...
+2024-06-18T21:54:19.0318334Z Job is waiting for a hosted runner to come online.
+2024-06-18T21:54:20.4893882Z Job is about to start running on the hosted runner: GitHub Actions 137 (hosted)
+2024-06-18T21:54:22.3577346Z Current runner version: '2.317.0'
+2024-06-18T21:54:22.3606630Z ##[group]Operating System
+2024-06-18T21:54:22.3607512Z Ubuntu
+2024-06-18T21:54:22.3608184Z 20.04.6
+2024-06-18T21:54:22.3608715Z LTS
+2024-06-18T21:54:22.3609266Z ##[endgroup]
+2024-06-18T21:54:22.3609879Z ##[group]Runner Image
+2024-06-18T21:54:22.3610600Z Image: ubuntu-20.04
+2024-06-18T21:54:22.3611336Z Version: 20240609.1.0
+2024-06-18T21:54:22.3613253Z Included Software: https://github.com/actions/runner-images/blob/ubuntu20/20240609.1/images/ubuntu/Ubuntu2004-Readme.md
+2024-06-18T21:54:22.3615668Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu20%2F20240609.1
+2024-06-18T21:54:22.3617121Z ##[endgroup]
+2024-06-18T21:54:22.3617777Z ##[group]Runner Image Provisioner
+2024-06-18T21:54:22.3618560Z 2.0.370.1
+2024-06-18T21:54:22.3619141Z ##[endgroup]
+2024-06-18T21:54:22.3620685Z ##[group]GITHUB_TOKEN Permissions
+2024-06-18T21:54:22.3622822Z Contents: read
+2024-06-18T21:54:22.3623494Z Metadata: read
+2024-06-18T21:54:22.3624288Z Packages: read
+2024-06-18T21:54:22.3625131Z ##[endgroup]
+2024-06-18T21:54:22.3629133Z Secret source: Actions
+2024-06-18T21:54:22.3630087Z Prepare workflow directory
+2024-06-18T21:54:22.4539827Z Prepare all required actions
+2024-06-18T21:54:22.4697273Z Getting action download info
+2024-06-18T21:54:22.6463393Z Download action repository 'actions/checkout@v4' (SHA:692973e3d937129bcbf40652eb9f2f61becf3332)
+2024-06-18T21:54:23.0345633Z Download action repository 'actions/setup-node@v4' (SHA:60edb5dd545a775178f52524783378180af0d1f8)
+2024-06-18T21:54:23.2094436Z Complete job name: Build and Lint (18.x)
+2024-06-18T21:54:23.2858569Z ##[group]Run actions/checkout@v4
+2024-06-18T21:54:23.2859122Z with:
+2024-06-18T21:54:23.2859662Z   repository: Devin-Applications/metamask-logo-devin
+2024-06-18T21:54:23.2860490Z   token: ***
+2024-06-18T21:54:23.2860889Z   ssh-strict: true
+2024-06-18T21:54:23.2861293Z   ssh-user: git
+2024-06-18T21:54:23.2861645Z   persist-credentials: true
+2024-06-18T21:54:23.2862069Z   clean: true
+2024-06-18T21:54:23.2862482Z   sparse-checkout-cone-mode: true
+2024-06-18T21:54:23.2862923Z   fetch-depth: 1
+2024-06-18T21:54:23.2863288Z   fetch-tags: false
+2024-06-18T21:54:23.2863686Z   show-progress: true
+2024-06-18T21:54:23.2864032Z   lfs: false
+2024-06-18T21:54:23.2864363Z   submodules: false
+2024-06-18T21:54:23.2864752Z   set-safe-directory: true
+2024-06-18T21:54:23.2865123Z env:
+2024-06-18T21:54:23.2865448Z   INFURA_PROJECT_ID: 
+2024-06-18T21:54:23.2865842Z ##[endgroup]
+2024-06-18T21:54:23.5035405Z Syncing repository: Devin-Applications/metamask-logo-devin
+2024-06-18T21:54:23.5038638Z ##[group]Getting Git version info
+2024-06-18T21:54:23.5040249Z Working directory is '/home/runner/work/metamask-logo-devin/metamask-logo-devin'
+2024-06-18T21:54:23.5042276Z [command]/usr/bin/git version
+2024-06-18T21:54:23.5043045Z git version 2.45.2
+2024-06-18T21:54:23.5055639Z ##[endgroup]
+2024-06-18T21:54:23.5075117Z Temporarily overriding HOME='/home/runner/work/_temp/77635142-2022-4470-9367-1c39f3029c32' before making global git config changes
+2024-06-18T21:54:23.5077524Z Adding repository directory to the temporary git global config as a safe directory
+2024-06-18T21:54:23.5088240Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/metamask-logo-devin/metamask-logo-devin
+2024-06-18T21:54:23.5118267Z Deleting the contents of '/home/runner/work/metamask-logo-devin/metamask-logo-devin'
+2024-06-18T21:54:23.5121761Z ##[group]Initializing the repository
+2024-06-18T21:54:23.5126810Z [command]/usr/bin/git init /home/runner/work/metamask-logo-devin/metamask-logo-devin
+2024-06-18T21:54:23.5179147Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-06-18T21:54:23.5181031Z hint: is subject to change. To configure the initial branch name to use in all
+2024-06-18T21:54:23.5182854Z hint: of your new repositories, which will suppress this warning, call:
+2024-06-18T21:54:23.5184091Z hint:
+2024-06-18T21:54:23.5185078Z hint: 	git config --global init.defaultBranch <name>
+2024-06-18T21:54:23.5186506Z hint:
+2024-06-18T21:54:23.5187591Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-06-18T21:54:23.5189396Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-06-18T21:54:23.5190768Z hint:
+2024-06-18T21:54:23.5191543Z hint: 	git branch -m <name>
+2024-06-18T21:54:23.5193208Z Initialized empty Git repository in /home/runner/work/metamask-logo-devin/metamask-logo-devin/.git/
+2024-06-18T21:54:23.5196366Z [command]/usr/bin/git remote add origin https://github.com/Devin-Applications/metamask-logo-devin
+2024-06-18T21:54:23.5216842Z ##[endgroup]
+2024-06-18T21:54:23.5217998Z ##[group]Disabling automatic garbage collection
+2024-06-18T21:54:23.5221590Z [command]/usr/bin/git config --local gc.auto 0
+2024-06-18T21:54:23.5240972Z ##[endgroup]
+2024-06-18T21:54:23.5242126Z ##[group]Setting up auth
+2024-06-18T21:54:23.5248613Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-06-18T21:54:23.5272128Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-06-18T21:54:23.5528571Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-06-18T21:54:23.5550278Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-06-18T21:54:23.5686100Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-06-18T21:54:23.5713718Z ##[endgroup]
+2024-06-18T21:54:23.5714910Z ##[group]Fetching the repository
+2024-06-18T21:54:23.5723465Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a7086c58d44ddf8da6f125ee7282147b8abff0ad:refs/remotes/origin/Devin/yarn-xHR
+2024-06-18T21:54:24.0296772Z From https://github.com/Devin-Applications/metamask-logo-devin
+2024-06-18T21:54:24.0298984Z  * [new ref]         a7086c58d44ddf8da6f125ee7282147b8abff0ad -> origin/Devin/yarn-xHR
+2024-06-18T21:54:24.0316216Z ##[endgroup]
+2024-06-18T21:54:24.0316947Z ##[group]Determining the checkout info
+2024-06-18T21:54:24.0318209Z ##[endgroup]
+2024-06-18T21:54:24.0323029Z [command]/usr/bin/git sparse-checkout disable
+2024-06-18T21:54:24.0350644Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2024-06-18T21:54:24.0367584Z ##[group]Checking out the ref
+2024-06-18T21:54:24.0371488Z [command]/usr/bin/git checkout --progress --force -B Devin/yarn-xHR refs/remotes/origin/Devin/yarn-xHR
+2024-06-18T21:54:24.0555871Z Switched to a new branch 'Devin/yarn-xHR'
+2024-06-18T21:54:24.0557619Z branch 'Devin/yarn-xHR' set up to track 'origin/Devin/yarn-xHR'.
+2024-06-18T21:54:24.0562490Z ##[endgroup]
+2024-06-18T21:54:24.0586283Z [command]/usr/bin/git log -1 --format='%H'
+2024-06-18T21:54:24.0600519Z 'a7086c58d44ddf8da6f125ee7282147b8abff0ad'
+2024-06-18T21:54:24.0900861Z ##[group]Run actions/setup-node@v4
+2024-06-18T21:54:24.0901465Z with:
+2024-06-18T21:54:24.0901784Z   node-version: 18.x
+2024-06-18T21:54:24.0902172Z   always-auth: false
+2024-06-18T21:54:24.0902583Z   check-latest: false
+2024-06-18T21:54:24.0903140Z   token: ***
+2024-06-18T21:54:24.0903468Z env:
+2024-06-18T21:54:24.0903811Z   INFURA_PROJECT_ID: 
+2024-06-18T21:54:24.0904167Z ##[endgroup]
+2024-06-18T21:54:24.2511812Z Found in cache @ /opt/hostedtoolcache/node/18.20.3/x64
+2024-06-18T21:54:24.2513038Z ##[group]Environment details
+2024-06-18T21:54:24.7496304Z node: v18.20.3
+2024-06-18T21:54:24.7496993Z npm: 10.7.0
+2024-06-18T21:54:24.7497571Z yarn: 4.3.0
+2024-06-18T21:54:24.7498606Z ##[endgroup]
+2024-06-18T21:54:24.7616989Z ##[group]Run yarn set version 4.3.0
+2024-06-18T21:54:24.7617491Z [36;1myarn set version 4.3.0[0m
+2024-06-18T21:54:24.7638909Z shell: /usr/bin/bash -e {0}
+2024-06-18T21:54:24.7639279Z env:
+2024-06-18T21:54:24.7639561Z   INFURA_PROJECT_ID: 
+2024-06-18T21:54:24.7640127Z ##[endgroup]
+2024-06-18T21:54:25.1216131Z [94m➤[39m YN0000: Downloading [38;5;170mhttps://repo.yarnpkg.com/4.3.0/packages/yarnpkg-cli/bin/yarn.js[39m
+2024-06-18T21:54:25.2723646Z [94m➤[39m YN0000: Saving the new release in [35m.yarn/releases/yarn-4.3.0.cjs[39m
+2024-06-18T21:54:25.2856839Z [94m➤[39m YN0000: Done in 0s 169ms
+2024-06-18T21:54:25.3002855Z ##[group]Run yarn --immutable
+2024-06-18T21:54:25.3003277Z [36;1myarn --immutable[0m
+2024-06-18T21:54:25.3021247Z shell: /usr/bin/bash -e {0}
+2024-06-18T21:54:25.3021583Z env:
+2024-06-18T21:54:25.3021852Z   INFURA_PROJECT_ID: 
+2024-06-18T21:54:25.3022198Z ##[endgroup]
+2024-06-18T21:54:25.7102742Z [94m➤[39m YN0000: · Yarn 4.3.0
+2024-06-18T21:54:25.7242318Z [94m➤[39m [90mYN0000[39m: ┌ Resolution step
+2024-06-18T21:54:25.7244028Z ##[group]Resolution step
+2024-06-18T21:54:25.8031987Z ##[endgroup]
+2024-06-18T21:54:25.8033285Z [94m➤[39m [90mYN0000[39m: └ Completed
+2024-06-18T21:54:25.8250838Z [94m➤[39m [90mYN0000[39m: ┌ Fetch step
+2024-06-18T21:54:25.8252277Z ##[group]Fetch step
+2024-06-18T21:54:28.0517107Z [94m➤[39m YN0013: │ [38;5;220m539[39m packages were added to the project ([38;5;160m+ 54.57 MiB[39m).
+2024-06-18T21:54:28.0518273Z ##[endgroup]
+2024-06-18T21:54:28.0518963Z [94m➤[39m [90mYN0000[39m: └ Completed in 2s 227ms
+2024-06-18T21:54:28.0705705Z [94m➤[39m [90mYN0000[39m: ┌ Link step
+2024-06-18T21:54:28.0706963Z ##[group]Link step
+2024-06-18T21:54:29.5657783Z [93m➤[39m YN0004: │ [38;5;166m@lavamoat/[39m[38;5;173mpreinstall-always-fail[39m[38;5;111m@[39m[38;5;111mnpm:1.0.3[39m lists build scripts, but all build scripts have been disabled.
+2024-06-18T21:54:29.5669697Z ##[endgroup]
+2024-06-18T21:54:29.5670862Z [94m➤[39m [90mYN0000[39m: └ Completed in 1s 495ms
+2024-06-18T21:54:29.5972131Z [93m➤[39m YN0000: · Done with warnings in 3s 888ms
+2024-06-18T21:54:29.6908910Z ##[group]Run yarn allow-scripts
+2024-06-18T21:54:29.6909553Z [36;1myarn allow-scripts[0m
+2024-06-18T21:54:29.6933118Z shell: /usr/bin/bash -e {0}
+2024-06-18T21:54:29.6933650Z env:
+2024-06-18T21:54:29.6934089Z   INFURA_PROJECT_ID: 
+2024-06-18T21:54:29.6934567Z ##[endgroup]
+2024-06-18T21:54:30.3053884Z SyntaxError: Unknown token: { line: 3, col: 2, type: 'INVALID', value: undefined } 3:2 in lockfile
+2024-06-18T21:54:30.3057304Z     at Parser.unexpected (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@yarnpkg/lockfile/index.js:5064:11)
+2024-06-18T21:54:30.3059591Z     at Parser.parse (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@yarnpkg/lockfile/index.js:5193:14)
+2024-06-18T21:54:30.3061398Z     at parse (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@yarnpkg/lockfile/index.js:5262:17)
+2024-06-18T21:54:30.3063593Z     at module.exports.exports.default (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@yarnpkg/lockfile/index.js:4835:96)
+2024-06-18T21:54:30.3065601Z     at loadTree (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@lavamoat/allow-scripts/src/index.js:270:59)
+2024-06-18T21:54:30.3067607Z     at async loadAllPackageConfigurations (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@lavamoat/allow-scripts/src/index.js:365:33)
+2024-06-18T21:54:30.3069781Z     at async runAllowedPackages (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@lavamoat/allow-scripts/src/index.js:29:7)
+2024-06-18T21:54:30.3071676Z     at async start (/home/runner/work/metamask-logo-devin/metamask-logo-devin/node_modules/@lavamoat/allow-scripts/src/cli.js:19:7)
+2024-06-18T21:54:30.3292073Z ##[error]Process completed with exit code 1.
+2024-06-18T21:54:30.3429711Z Post job cleanup.
+2024-06-18T21:54:30.4295538Z [command]/usr/bin/git version
+2024-06-18T21:54:30.4328610Z git version 2.45.2
+2024-06-18T21:54:30.4371154Z Temporarily overriding HOME='/home/runner/work/_temp/fedf91e3-6926-48c0-a6ff-9a0fb4839150' before making global git config changes
+2024-06-18T21:54:30.4373398Z Adding repository directory to the temporary git global config as a safe directory
+2024-06-18T21:54:30.4378048Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/metamask-logo-devin/metamask-logo-devin
+2024-06-18T21:54:30.4407363Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-06-18T21:54:30.4433480Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-06-18T21:54:30.4587210Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-06-18T21:54:30.4601606Z http.https://github.com/.extraheader
+2024-06-18T21:54:30.4613154Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2024-06-18T21:54:30.4637961Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-06-18T21:54:30.5003201Z Cleaning up orphan processes

@@ -1,0 +1,5 @@
+2024-06-18T21:54:36.5764113Z ##[section]Starting: Prepare job all-jobs-pass
+2024-06-18T21:54:36.5825409Z Evaluating strategy
+2024-06-18T21:54:36.5831739Z Creating job '__default'
+2024-06-18T21:54:36.5834696Z Skip evaluating job properties
+2024-06-18T21:54:36.5835999Z ##[section]Finishing: Prepare job all-jobs-pass

@@ -1,0 +1,9 @@
+2024-06-18T21:54:27.8446378Z ##[group]Run yarn set version 4.3.0
+2024-06-18T21:54:27.8446976Z [36;1myarn set version 4.3.0[0m
+2024-06-18T21:54:27.8468790Z shell: /usr/bin/bash -e {0}
+2024-06-18T21:54:27.8469247Z env:
+2024-06-18T21:54:27.8469531Z   INFURA_PROJECT_ID: 
+2024-06-18T21:54:27.8470069Z ##[endgroup]
+2024-06-18T21:54:28.1598698Z [94m➤[39m YN0000: Downloading [38;5;170mhttps://repo.yarnpkg.com/4.3.0/packages/yarnpkg-cli/bin/yarn.js[39m
+2024-06-18T21:54:28.4078829Z [94m➤[39m YN0000: Saving the new release in [35m.yarn/releases/yarn-4.3.0.cjs[39m
+2024-06-18T21:54:28.4165171Z [94m➤[39m YN0000: Done in 0s 261ms

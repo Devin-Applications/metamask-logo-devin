@@ -1,0 +1,13 @@
+2024-06-18T21:54:17.3420279Z ##[section]Starting: Prepare job build-lint
+2024-06-18T21:54:17.3422814Z Evaluating strategy
+2024-06-18T21:54:17.3431220Z Creating job '_18_x'
+2024-06-18T21:54:17.3434170Z Evaluating timeout
+2024-06-18T21:54:17.3434226Z Evaluating cancel timeout
+2024-06-18T21:54:17.3434257Z Evaluating continue on error
+2024-06-18T21:54:17.3434291Z Evaluating target
+2024-06-18T21:54:17.3435041Z Creating job '_20_x'
+2024-06-18T21:54:17.3437747Z Evaluating timeout
+2024-06-18T21:54:17.3437776Z Evaluating cancel timeout
+2024-06-18T21:54:17.3437800Z Evaluating continue on error
+2024-06-18T21:54:17.3437829Z Evaluating target
+2024-06-18T21:54:17.3439878Z ##[section]Finishing: Prepare job build-lint

@@ -1,0 +1,69 @@
+2024-06-18T21:54:25.9610868Z ##[group]Run actions/checkout@v4
+2024-06-18T21:54:25.9611449Z with:
+2024-06-18T21:54:25.9611930Z   repository: Devin-Applications/metamask-logo-devin
+2024-06-18T21:54:25.9612725Z   token: ***
+2024-06-18T21:54:25.9613110Z   ssh-strict: true
+2024-06-18T21:54:25.9613458Z   ssh-user: git
+2024-06-18T21:54:25.9613821Z   persist-credentials: true
+2024-06-18T21:54:25.9614262Z   clean: true
+2024-06-18T21:54:25.9614622Z   sparse-checkout-cone-mode: true
+2024-06-18T21:54:25.9615076Z   fetch-depth: 1
+2024-06-18T21:54:25.9615439Z   fetch-tags: false
+2024-06-18T21:54:25.9615795Z   show-progress: true
+2024-06-18T21:54:25.9616160Z   lfs: false
+2024-06-18T21:54:25.9616509Z   submodules: false
+2024-06-18T21:54:25.9616854Z   set-safe-directory: true
+2024-06-18T21:54:25.9617247Z env:
+2024-06-18T21:54:25.9617578Z   INFURA_PROJECT_ID: 
+2024-06-18T21:54:25.9617928Z ##[endgroup]
+2024-06-18T21:54:26.1613097Z Syncing repository: Devin-Applications/metamask-logo-devin
+2024-06-18T21:54:26.1615264Z ##[group]Getting Git version info
+2024-06-18T21:54:26.1616381Z Working directory is '/home/runner/work/metamask-logo-devin/metamask-logo-devin'
+2024-06-18T21:54:26.1617604Z [command]/usr/bin/git version
+2024-06-18T21:54:26.1631291Z git version 2.45.2
+2024-06-18T21:54:26.1655619Z ##[endgroup]
+2024-06-18T21:54:26.1668610Z Temporarily overriding HOME='/home/runner/work/_temp/fde903bd-a3c0-4f90-b6e0-d566ce20bf82' before making global git config changes
+2024-06-18T21:54:26.1670143Z Adding repository directory to the temporary git global config as a safe directory
+2024-06-18T21:54:26.1679256Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/metamask-logo-devin/metamask-logo-devin
+2024-06-18T21:54:26.1703487Z Deleting the contents of '/home/runner/work/metamask-logo-devin/metamask-logo-devin'
+2024-06-18T21:54:26.1706483Z ##[group]Initializing the repository
+2024-06-18T21:54:26.1710510Z [command]/usr/bin/git init /home/runner/work/metamask-logo-devin/metamask-logo-devin
+2024-06-18T21:54:26.1783405Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-06-18T21:54:26.1785462Z hint: is subject to change. To configure the initial branch name to use in all
+2024-06-18T21:54:26.1787294Z hint: of your new repositories, which will suppress this warning, call:
+2024-06-18T21:54:26.1788049Z hint:
+2024-06-18T21:54:26.1788652Z hint: 	git config --global init.defaultBranch <name>
+2024-06-18T21:54:26.1789603Z hint:
+2024-06-18T21:54:26.1790388Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-06-18T21:54:26.1791455Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-06-18T21:54:26.1792172Z hint:
+2024-06-18T21:54:26.1792541Z hint: 	git branch -m <name>
+2024-06-18T21:54:26.1793511Z Initialized empty Git repository in /home/runner/work/metamask-logo-devin/metamask-logo-devin/.git/
+2024-06-18T21:54:26.1796222Z [command]/usr/bin/git remote add origin https://github.com/Devin-Applications/metamask-logo-devin
+2024-06-18T21:54:26.1823732Z ##[endgroup]
+2024-06-18T21:54:26.1824731Z ##[group]Disabling automatic garbage collection
+2024-06-18T21:54:26.1827445Z [command]/usr/bin/git config --local gc.auto 0
+2024-06-18T21:54:26.1846205Z ##[endgroup]
+2024-06-18T21:54:26.1847113Z ##[group]Setting up auth
+2024-06-18T21:54:26.1852333Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-06-18T21:54:26.1872503Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-06-18T21:54:26.2091453Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-06-18T21:54:26.2111246Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-06-18T21:54:26.2246290Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-06-18T21:54:26.2276329Z ##[endgroup]
+2024-06-18T21:54:26.2277435Z ##[group]Fetching the repository
+2024-06-18T21:54:26.2284575Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a7086c58d44ddf8da6f125ee7282147b8abff0ad:refs/remotes/origin/Devin/yarn-xHR
+2024-06-18T21:54:27.0578784Z From https://github.com/Devin-Applications/metamask-logo-devin
+2024-06-18T21:54:27.0580406Z  * [new ref]         a7086c58d44ddf8da6f125ee7282147b8abff0ad -> origin/Devin/yarn-xHR
+2024-06-18T21:54:27.0595603Z ##[endgroup]
+2024-06-18T21:54:27.0596312Z ##[group]Determining the checkout info
+2024-06-18T21:54:27.0597913Z ##[endgroup]
+2024-06-18T21:54:27.0602832Z [command]/usr/bin/git sparse-checkout disable
+2024-06-18T21:54:27.0630389Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2024-06-18T21:54:27.0649025Z ##[group]Checking out the ref
+2024-06-18T21:54:27.0653285Z [command]/usr/bin/git checkout --progress --force -B Devin/yarn-xHR refs/remotes/origin/Devin/yarn-xHR
+2024-06-18T21:54:27.0841693Z Switched to a new branch 'Devin/yarn-xHR'
+2024-06-18T21:54:27.0843290Z branch 'Devin/yarn-xHR' set up to track 'origin/Devin/yarn-xHR'.
+2024-06-18T21:54:27.0848836Z ##[endgroup]
+2024-06-18T21:54:27.0874058Z [command]/usr/bin/git log -1 --format='%H'
+2024-06-18T21:54:27.0888315Z 'a7086c58d44ddf8da6f125ee7282147b8abff0ad'
