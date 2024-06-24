@@ -1,0 +1,5 @@
+/home/ubuntu/metamask-module-template/README.md
+/home/ubuntu/metamask-module-template/package.json
+/home/ubuntu/metamask-module-template/yarn.lock
+/home/ubuntu/metamask-module-template/scripts/prepack.sh
+/home/ubuntu/metamask-module-template/yarn.config.cjs
