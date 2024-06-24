@@ -20,6 +20,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Cache Yarn dependencies
+        uses: actions/cache@v2
+        with:
+          path: .yarn/cache
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
       - name: Create Yarn cache directory
         run: mkdir -p .yarn/cache
       - run: yarn install --immutable --immutable-cache
