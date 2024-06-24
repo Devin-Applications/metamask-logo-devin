@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Create Yarn cache directory
+        run: mkdir -p .yarn/cache
       - run: yarn install --immutable --immutable-cache
       - run: yarn lint
       - name: Ensure demo build script works
