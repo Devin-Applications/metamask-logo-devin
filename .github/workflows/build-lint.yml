@@ -30,6 +30,11 @@ jobs:
       - name: Create Yarn cache directory
         run: mkdir -p .yarn/cache
       - run: yarn install --immutable --immutable-cache
+      - name: Save Yarn cache
+        uses: actions/cache@v2
+        with:
+          path: .yarn/cache
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
       - run: yarn lint
       - name: Ensure demo build script works
         run: yarn demo --all
