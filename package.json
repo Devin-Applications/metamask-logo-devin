@@ -62,8 +62,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "lavamoat": {
-    "allowScripts": {
-      "@lavamoat/preinstall-always-fail": false
-    }
-  }
+    "allowScripts": {}
+  },
+  "packageManager": "yarn@4.1.1"
 }
