@@ -134,6 +134,11 @@ async function main() {
       await buildDemo(currentDemoName);
     }
   } else {
+    if (!demoName) {
+      throw new UsageError(
+        'You must specify a demo name or use the --all flag',
+      );
+    }
     await buildIndex();
     await buildDemo(demoName);
   }
