@@ -16,11 +16,13 @@ jobs:
         node-version: [18.x, 20.x]
     steps:
       - uses: actions/checkout@v2
+      - name: Enable Corepack
+        run: corepack enable
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn --frozen-lockfile
+      - run: yarn --immutable
       - run: yarn allow-scripts
       - run: yarn lint
       - name: Ensure demo build script works
