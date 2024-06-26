@@ -65,5 +65,12 @@
     "allowScripts": {
       "@lavamoat/preinstall-always-fail": false
     }
-  }
+  },
+  "packageManager": "yarn@4.1.1",
+  "plugins": [
+    {
+      "path": ".yarn/plugins/@yarnpkg/plugin-allow-scripts.cjs",
+      "spec": "https://raw.githubusercontent.com/LavaMoat/LavaMoat/main/packages/yarn-plugin-allow-scripts/bundles/@yarnpkg/plugin-allow-scripts.js"
+    }
+  ]
 }
