@@ -24,7 +24,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
       - run: yarn install --mode=skip-build
-      - run: yarn allow-scripts
       - run: yarn lint
       - name: Ensure demo build script works
         run: yarn demo --all
