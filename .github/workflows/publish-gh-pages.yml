@@ -10,6 +10,7 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
+      - run: corepack enable
       - uses: actions/checkout@v2
       - name: Get Node.js version
         id: nvm
@@ -28,7 +29,7 @@ jobs:
         with:
           path: ${{ steps.yarn-cache-dir.outputs.YARN_CACHE_DIR }}
           key: yarn-cache-${{ runner.os }}-${{ steps.yarn-version.outputs.YARN_VERSION }}-${{ hashFiles('yarn.lock') }}
-      - run: yarn --frozen-lockfile
+      - run: yarn install --immutable
       - run: yarn allow-scripts
       - uses: MetaMask/action-publish-gh-pages@v1
         with:
